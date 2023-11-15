@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { UseCart } from '../context/CartContext'
 export const Header = () => {
-  return (
+    const cartList = UseCart()
+    console.log(cartList)
+    return (
     <div className='container m-auto flex justify-between border-b border-b-stone-500 items-center py-5'>
         <div>
             Logo
@@ -12,6 +14,7 @@ export const Header = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/Cart">Cart</Link></li>
             </ul>
+           
         </div> 
         <div>
             <span>Card : 2</span>
