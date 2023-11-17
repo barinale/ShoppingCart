@@ -17,7 +17,7 @@ export const Header = () => {
            
         </div> 
         <div>
-            <span>Card : {value.cartList.length}</span>
+            <span>Cart : {value.cartList.length}</span>
         </div>
 
     </div>

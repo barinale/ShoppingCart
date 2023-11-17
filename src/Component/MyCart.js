@@ -8,7 +8,7 @@ export const MyCart = () => {
   return (
     <div className='container m-auto py-4'>
         <h1 className='font-bold text-center text-lg mb-2'>
-          Card items : {value.cartList.length} / {value.total}$
+          Cart items : {value.cartList.length} / {value.total}$
         </h1>
         {value.cartList.map((item)=>{
           return <ItemCart key={item.id} product={item} removeItem={RemoveCart}/>
