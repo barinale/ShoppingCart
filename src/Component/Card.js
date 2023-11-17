@@ -4,7 +4,7 @@ import { UseCart } from '../context/CartContext'
 export const Card = ({item}) => {
   const [inCart,SetinCart]=useState(false);
   const {AddToCart,RemoveCart,value} =UseCart()
-    const {total,cartList} = value;
+    const {cartList} = value;
   //Hanl Add and Remove To Cart
   const HandAdd=()=>{AddToCart(item)}
   const HandRmove = ()=>{RemoveCart(item)}
