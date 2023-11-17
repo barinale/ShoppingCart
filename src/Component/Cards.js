@@ -11,7 +11,7 @@ export const Cards = () => {
     {"id": 6, "name": "ZEBRONICS Zeb-Thunder Wired", "price": 29, "image": "/assets/images/1006.png"}
   ]
   return (
-    <div className='container m-auto flex justify-between flex-wrap'>
+    <div className='container m-auto flex md:justify-between justify-center flex-wrap'>
       
       {products.map((item)=>{
         return <Card item={item} key={item.id} />
