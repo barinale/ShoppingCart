@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { UseCart } from '../context/CartContext'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
 export const Header = () => {
-    
+    const Data = useSelector(state =>state.cartState.Total);
+
     const {value} = UseCart()
     return (
     <div className='container m-auto flex justify-between border-b border-b-stone-500 items-center py-5'>
@@ -17,7 +19,7 @@ export const Header = () => {
            
         </div> 
         <div>
-            <span>Cart : {value.cartList.length}</span>
+            <span>Cart : {Data}</span>
         </div>
 
     </div>
